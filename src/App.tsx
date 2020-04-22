@@ -7,13 +7,14 @@ import SignIn from './pages/SignIn';
 
 // import Routes from './routes';
 
-import AuthContext from './context/AuthContext';
+import { AuthProvider } from './context/AuthContext';
 
 const App: React.FC = () => (
   <>
-    <AuthContext.Provider value={{ name: 'Lucaus' }}>
+    <AuthProvider>
       <SignIn />
-    </AuthContext.Provider>
+    </AuthProvider>
+
     <GLobalStyle />
   </>
 );
