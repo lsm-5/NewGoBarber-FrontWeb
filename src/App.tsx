@@ -1,7 +1,15 @@
 import React from 'react';
+// import { BrowserRouter } from 'react-router-dom';
 
-function App() {
-  return <h1>HEllo</h1>;
-}
+import GLobalStyle from './styles/global';
+import SignIn from './pages/SignIn';
+// import Routes from './routes';
+
+const App: React.FC = () => (
+  <>
+    <SignIn />
+    <GLobalStyle />
+  </>
+);
 
 export default App;
